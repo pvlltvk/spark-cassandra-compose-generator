@@ -15,7 +15,7 @@ def main():
         "--cassandra-mem", default='1024M',
         help="Memory limit for Cassandra nodes")
     parser.add_argument(
-        "--spark-cpu", default='1', help="CPU limit for Spark nodes")
+        "--spark-cpu", default='1', help="CPU limit for Spark nodes. Only an integer number is required")
     parser.add_argument(
         "--spark-mem", default='1024M',
         help="Memory limit for Spark nodes")
