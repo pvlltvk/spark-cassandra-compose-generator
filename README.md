@@ -12,7 +12,7 @@
 Spark web UI is accesible on the localhost: http://127.0.0.1:8080/
 
 This setup also uses [spark-cassandra-connector](https://github.com/datastax/spark-cassandra-connector) for accessing Cassandra from Spark. You can use the Spark Cassandra Connector with the Spark Shell:
-1. Exec to the docker container with Spark Master: `docker exec -it compose_spark_1 /bin/bash`
+1. Exec to the docker container with Spark Master: `docker exec -it spark-cassandra-compose-generator_spark_1 /bin/bash`
 2. Run the Spark Shell with the Spark Cassandra Connector: `./bin/spark-shell --master spark://spark:7077 --jars jars/spark-cassandra-connector-assembly_2.12-3.1.0.jar --packages com.datastax.spark:spark-cassandra-connector_2.12:3.1.0 --conf spark.cassandra.connection.host=cassandra-1,cassandra-2 --conf spark.cassandra.auth.username=cassandra --conf spark.cassandra.auth.password=cassandra`
 
 More info could be found [here](https://github.com/datastax/spark-cassandra-connector/blob/master/doc/13_spark_shell.md)
